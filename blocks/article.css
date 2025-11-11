@@ -1,0 +1,65 @@
+.article {
+  padding: 0 30px;
+  max-width: none;
+}
+
+.article__content {
+  padding-top: 90px;
+}
+
+.article__title {
+  font-size: 54px;
+  line-height: 1.07;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.article__quote {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.42;
+}
+
+.article__quote-cite {
+  width: 100%;
+  display: block;
+  text-align: right;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.42;
+  margin-bottom: 32px;
+}
+
+.article__paragraph {
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+@media screen and (max-width: 769px) {
+  .article__title {
+    font-size: 32px;
+    line-height: 35px;
+    margin: 0 auto;
+  }
+  .article__content {
+    padding: 16px;
+  }
+  .article__quote {
+    padding-top: 40px;
+  }
+  .article__quote-cite {
+    padding-top: 26px;
+  }
+  .article__paragraph {
+    padding-top: 32px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .article {
+    padding: 0 16px;
+  }
+  .article__quote {
+    margin-bottom: 55px;
+  }
+}
