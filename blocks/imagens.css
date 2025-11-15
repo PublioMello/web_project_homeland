@@ -1,6 +1,15 @@
-.imagens {
+.imagens__block {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 16px;
+  margin: 0 auto;
+  width: 1184px;
+  padding-top: 118px;
+  padding-bottom: 92px;
+}
+
+.images__individual {
+  max-width: 284px;
+  max-height: 213px;
 }
