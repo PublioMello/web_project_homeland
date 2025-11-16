@@ -13,3 +13,38 @@
   max-width: 284px;
   max-height: 213px;
 }
+
+/* REsponsividade */
+
+@media screen and (max-width: 769px) {
+  .imagens__block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 16px;
+    margin: 0 auto;
+    width: 720px;
+    padding-top: 68px;
+    padding-bottom: 88px;
+  }
+  .images__individual {
+    max-width: 352px;
+    max-height: 264px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .imagens__block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 auto;
+    width: 288px;
+    padding-top: 38px;
+    padding-bottom: 62px;
+  }
+  .images__individual {
+    max-width: 288px;
+    max-height: 21 6px;
+  }
+}
