@@ -4,7 +4,7 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 16px;
   margin: 0 auto;
-  width: 1184px;
+  width: 100%;
   padding-top: 118px;
   padding-bottom: 92px;
 }
