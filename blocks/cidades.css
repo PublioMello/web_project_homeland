@@ -109,7 +109,7 @@
   .cidades__individual {
     gap: 48px 28px;
     margin: 0 auto;
-    width: 720px;
+    width: 100%;
   }
   .cidades__titulo {
     font-size: 42px;
