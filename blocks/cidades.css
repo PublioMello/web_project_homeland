@@ -67,7 +67,6 @@
   grid-area: descricao;
   display: flex;
   flex-direction: column;
-
   gap: 25px;
 }
 .cidades__descricao {
@@ -90,4 +89,83 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   grid-area: nft;
+}
+.cidades__nft:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+/* REsponsividade */
+
+@media screen and (max-width: 769px) {
+  .cidades {
+    gap: 72px;
+  }
+  .cidades__individual {
+    gap: 48px 28px;
+    margin: 0 auto;
+    width: 720px;
+  }
+  .cidades__titulo {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+  .cidades__foto {
+    width: 340px;
+    height: 340px;
+  }
+
+  .cidades__descricao {
+    font-size: 16px;
+    line-height: 163%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cidades {
+    gap: 30px;
+    width: 288px;
+    margin: 0 auto;
+  }
+  .cidades__individual {
+    display: flex;
+    flex-direction: column;
+    max-width: 288px;
+    gap: 30px;
+  }
+  .cidades__titulo {
+    font-size: 32px;
+    line-height: 1.09;
+    order: 1;
+  }
+  .cidades__card-artista {
+    order: 2;
+    align-items: flex-start;
+  }
+  .cidades__foto {
+    width: 320px;
+    height: 320px;
+    order: 3;
+  }
+  .cidades__card-descricao {
+    max-width: 288px;
+    order: 4;
+  }
+  .cidades__descricao {
+    font-size: 16px;
+    line-height: 163%;
+  }
+  .cidades__nft {
+    width: 288px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 1.2;
+    /* identical to box height */
+    text-align: center;
+  }
 }
