@@ -10,8 +10,7 @@
 }
 
 .imagens__individual {
-  max-width: 284px;
-  max-height: 213px;
+  max-width: 100%;
 }
 
 /* REsponsividade */
@@ -28,23 +27,22 @@
     padding-bottom: 88px;
   }
   .imagens__individual {
-    max-width: 352px;
-    max-height: 264px;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
   .imagens__block {
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin: 0 auto;
-    width: 288px;
+    width: 100%;
     padding-top: 38px;
     padding-bottom: 62px;
+    align-items: center;
   }
   .imagens__individual {
-    max-width: 288px;
-    max-height: 21 6px;
+    width: 95%;
   }
 }
